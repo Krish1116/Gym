@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krish Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Balthazar&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* Css Reset */
+    body{
+        margin: 0px;
+        padding: 0px;
+        color:#fefefe;
+        font-family: 'Balthazar', serif;
+        background: url('img/bg1.jpg');
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 145px;
+        top: 35px;
+    }
+    .left img{
+        width: 85px;
+    }
+    .left div{
+        line-height: 9px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .Mid{
+        display: block;
+        width: 33%;
+        margin: 35px auto;
+        /* border: 2px solid green; */
+        width: max-content;
+    }
+    .right{
+        position: absolute;
+        right: 35px;
+        top: 55px;
+        display: inline;
+        /* border: 2px solid yellow; */
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover{
+        text-decoration: underline;
+        color: rgb(10, 10, 10);
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        padding: 4px 14px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    .btn:hover{
+        background-color: rgb(110, 96, 96);
+    }
+    .container{
+        /* border: 2px solid #ff5c7e; */
+        margin: 109px 140px;
+        padding: 75px 75px;
+        width: 30%;
+        border-radius: 25px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 457px;
+        padding: 9px;
+        border: 2px solid blueviolet;
+        margin: 15px -27px;
+        font-size: 21px;
+        border-radius: 13px;
+        font-family: 'Balthazar';
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 23%;
+        margin: auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Krish Fitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="Mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <buttone class="btn">Call Us Now</buttone>
+            <buttone class="btn">Email Us</buttone>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym of Surat Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enater Your Name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enater Your Age">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enater Your Gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enater Your Locality">
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
